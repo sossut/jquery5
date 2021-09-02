@@ -25,8 +25,9 @@ $(document).ready(function(){
 
   $(window).on('mousemove', function(e) {
       if (e.pageY < 100) {
+          $('nav').fadeIn();
           $('nav').css('visibility', 'visible');
       } else {
-        $('nav').css('visibility', 'hidden');
+        $('nav').fadeOut();
       }
   })
